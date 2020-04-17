@@ -1,6 +1,7 @@
 .header {
     background: linear-gradient(rgba(50,50,50,.8), rgba(50,50,50,.8));
     height: 95vh;
+    position: relative;
 
     &__heading {
         text-align: center;
@@ -36,9 +37,26 @@
     }
 
     &__video {
-        position: fixed;
+        position: absolute;
         top: 0;
         z-index: -1;
         height: 95vh;
+    }
+
+    .arrow {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #1870CA;
+        position: absolute;
+        top: 81.5rem;
+        left: 48.5%;
+
+        img {
+            height: 1.6rem;
+        }
     }
 }

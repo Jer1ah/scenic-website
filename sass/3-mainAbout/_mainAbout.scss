@@ -1,0 +1,32 @@
+.mainAbout {
+    width: 100rem;
+    margin: 10rem auto 15rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &__info {
+        width: 55rem;
+
+        h3 {
+            color: #1870CA;
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        h1 {
+            margin: 0 0 2rem;
+            font-size: 3.1rem;
+            font-weight: 300;
+            letter-spacing: .2rem;
+        }
+
+        p {
+            color: #888;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 2.9rem;
+        } 
+    }
+}

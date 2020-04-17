@@ -46,6 +46,7 @@ html, body {
 .header {
   background: linear-gradient(rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0.8));
   height: 95vh;
+  position: relative;
 }
 .header__heading {
   text-align: center;
@@ -77,10 +78,54 @@ html, body {
   margin: 0;
 }
 .header__video {
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: -1;
   height: 95vh;
+}
+.header .arrow {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1870CA;
+  position: absolute;
+  top: 81.5rem;
+  left: 48.5%;
+}
+.header .arrow img {
+  height: 1.6rem;
+}
+
+.mainAbout {
+  width: 100rem;
+  margin: 10rem auto 15rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.mainAbout__info {
+  width: 55rem;
+}
+.mainAbout__info h3 {
+  color: #1870CA;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.mainAbout__info h1 {
+  margin: 0 0 2rem;
+  font-size: 3.1rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+}
+.mainAbout__info p {
+  color: #888;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.9rem;
 }
 
 /*# sourceMappingURL=main.css.map */
