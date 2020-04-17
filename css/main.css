@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 7.7rem;
+}
+.navigation .logo {
+  position: absolute;
+  top: 2.4rem;
+  left: 11rem;
+  font-size: 2.5rem;
+  margin: 0;
+}
+.navigation__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+.navigation__listItem {
+  margin: 0 1.5rem;
+  font-size: 1.7rem;
+}
+.navigation__listItem a {
+  text-decoration: none;
+}
+
+.header__heading {
+  text-align: center;
+  margin-top: 22rem;
+}
+
+/*# sourceMappingURL=main.css.map */

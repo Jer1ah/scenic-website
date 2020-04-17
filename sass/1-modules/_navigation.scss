@@ -1,0 +1,32 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 7.7rem;
+
+    .logo {
+        position: absolute;
+        top: 2.4rem;
+        left: 11rem;
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__listItem {
+        margin: 0 1.5rem;
+        font-size: 1.7rem;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
