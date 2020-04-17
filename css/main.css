@@ -3,6 +3,7 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   font-size: 10px;
+  font-family: "Manrope", sans-serif;
 }
 
 .navigation {
@@ -10,14 +11,17 @@ html, body {
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 7.7rem;
+  height: 10rem;
 }
 .navigation .logo {
   position: absolute;
-  top: 2.4rem;
+  top: 3.45rem;
   left: 11rem;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
   margin: 0;
+  color: #fff;
 }
 .navigation__list {
   display: flex;
@@ -27,16 +31,56 @@ html, body {
   list-style: none;
 }
 .navigation__listItem {
-  margin: 0 1.5rem;
-  font-size: 1.7rem;
+  margin: 0 2.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .navigation__listItem a {
   text-decoration: none;
+  color: #ddd;
+}
+.navigation__listItem a:hover {
+  color: #fff;
 }
 
+.header {
+  background: linear-gradient(rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0.8));
+  height: 95vh;
+}
 .header__heading {
   text-align: center;
-  margin-top: 22rem;
+  margin-top: 19rem;
+}
+.header__heading h1 {
+  font-size: 6rem;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 0.5rem;
+  margin: 0;
+}
+.header__heading p {
+  color: #ddd;
+  width: 66rem;
+  font-size: 1.75rem;
+  line-height: 3.5rem;
+  margin: 1rem auto 4rem;
+}
+.header__heading button {
+  background: inherit;
+  border: 0.2rem solid #fff;
+  border-radius: 0.3rem;
+  color: #fff;
+  height: 5.2rem;
+  width: 17rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  margin: 0;
+}
+.header__video {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  height: 95vh;
 }
 
 /*# sourceMappingURL=main.css.map */
