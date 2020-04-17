@@ -1,12 +1,15 @@
 .mainAbout {
-    width: 100rem;
-    margin: 10rem auto 15rem;
+    max-width: 115rem;
+    min-height: 40rem;
+    margin: 17.5rem auto 10rem;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    border-bottom: solid lightgray .1rem;
+    padding-bottom: 5rem;
 
     &__info {
-        width: 55rem;
+        flex: 2;
 
         h3 {
             color: #1870CA;
@@ -24,9 +27,46 @@
 
         p {
             color: #888;
+            width: 55rem;
             font-size: 1.5rem;
             font-weight: 500;
             line-height: 2.9rem;
         } 
+
+        .about-us {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1.3rem;
+        }
+    }
+
+    &__images {
+        position: relative;
+        flex: 1.5;
+
+        img {
+            border-radius: .5rem;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__image1 {
+        width: 25rem;
+        border-radius: .5rem;
+        position: absolute;
+        top: 10rem;
+        right: 0;
+        z-index: 11;
+    }
+
+    &__image2 {
+        width: 25rem;
+        left: 4rem;
+        border-radius: .5rem;
+        position: absolute;
     }
 }
