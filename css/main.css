@@ -169,7 +169,7 @@ html, body {
 .mainAbout__list {
   list-style: none;
   padding: 0;
-  margin: 0 auto 7rem;
+  margin: 0 auto 4.5rem;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -196,6 +196,143 @@ html, body {
   font-weight: 400;
   font-size: 1.5rem;
   color: #6c757d;
+}
+
+.mainServices {
+  margin: 10rem auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+.mainServices h3 {
+  color: #1870CA;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 11rem 0 0.5rem;
+}
+.mainServices h1 {
+  margin: 0 0 5rem;
+  font-weight: 300;
+  font-size: 3.3rem;
+  letter-spacing: 0.2rem;
+}
+.mainServices__list {
+  width: 110rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.mainServices__listItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 31%;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 3.3rem;
+  transition: 0.2s;
+}
+.mainServices__listItem .wrapper {
+  background-color: #1870CA;
+  background-size: 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+.mainServices__listItem .one {
+  background-image: url("../../img/ruler-white.svg");
+}
+.mainServices__listItem .two {
+  background-image: url("../../img/lightbulb-white.svg");
+}
+.mainServices__listItem .three {
+  background-image: url("../../img/laptop-white.svg");
+}
+.mainServices__listItem .four {
+  background-image: url("../../img/paper-white.svg");
+}
+.mainServices__listItem .five {
+  background-image: url("../../img/up-white.svg");
+}
+.mainServices__listItem .six {
+  background-image: url("../../img/bookmark-white.svg");
+}
+.mainServices__listItem .border {
+  border: 0.1rem solid #e9e9e9;
+  border-radius: 50%;
+  height: 9rem;
+  width: 9rem;
+  margin: 2rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainServices__listItem img {
+  height: 3rem;
+}
+.mainServices__listItem h3 {
+  margin: 1.2rem 0 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: black;
+}
+.mainServices__listItem p {
+  width: 90%;
+  font-size: 1.5rem;
+  color: #444;
+  line-height: 2.6rem;
+  margin: 0 0 4rem;
+}
+.mainServices__listItem:hover {
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px #e3e3e3;
+  transform: translateY(-1.5rem);
+}
+.mainServices__listItem:hover .wrapper {
+  background-color: white;
+  border: 0.1rem solid #1870CA;
+}
+.mainServices__listItem:hover .one {
+  background-image: url("../../img/ruler-blue.svg");
+}
+.mainServices__listItem:hover .two {
+  background-image: url("../../img/lightbulb-blue.svg");
+}
+.mainServices__listItem:hover .three {
+  background-image: url("../../img/laptop-blue.svg");
+}
+.mainServices__listItem:hover .four {
+  background-image: url("../../img/paper-blue.svg");
+}
+.mainServices__listItem:hover .five {
+  background-image: url("../../img/up-blue.svg");
+}
+.mainServices__listItem:hover .six {
+  background-image: url("../../img/bookmark-blue.svg");
+}
+.mainServices a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 1rem 0 8.8rem;
+  background-color: #1870CA;
+  color: white;
+  height: 5rem;
+  width: 16rem;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=main.css.map */
