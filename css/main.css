@@ -49,10 +49,11 @@ html, body {
   background-size: cover;
   height: 95vh;
   position: relative;
+  overflow: hidden;
 }
 .header__heading {
   text-align: center;
-  margin-top: 13.3rem;
+  margin-top: 17rem;
 }
 .header__heading h1 {
   font-size: 6rem;
@@ -85,31 +86,17 @@ html, body {
   z-index: -1;
   height: 95vh;
 }
-.header .arrow {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #1870CA;
-  position: absolute;
-  top: 81.5rem;
-  left: 48.5%;
-}
-.header .arrow img {
-  height: 1.6rem;
-}
 
 .mainAbout {
   max-width: 115rem;
   min-height: 40rem;
-  margin: 17.5rem auto 10rem;
+  margin: 17.5rem auto 7rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   border-bottom: solid lightgray 0.1rem;
   padding-bottom: 5rem;
+  position: relative;
 }
 .mainAbout__info {
   flex: 2;
@@ -163,6 +150,52 @@ html, body {
   left: 4rem;
   border-radius: 0.5rem;
   position: absolute;
+}
+.mainAbout .arrow {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1870CA;
+  position: absolute;
+  top: -20.2rem;
+  left: 48.5%;
+}
+.mainAbout .arrow img {
+  height: 1.6rem;
+}
+.mainAbout__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 7rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 95rem;
+}
+.mainAbout__listItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainAbout__listItem span {
+  font-size: 3.5rem;
+  color: #1870CA;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+.mainAbout__listItem img {
+  width: 4.4rem;
+  margin-right: 1.3rem;
+}
+.mainAbout__listItem h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #6c757d;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,12 +1,13 @@
 .mainAbout {
     max-width: 115rem;
     min-height: 40rem;
-    margin: 17.5rem auto 10rem;
+    margin: 17.5rem auto 7rem;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     border-bottom: solid lightgray .1rem;
     padding-bottom: 5rem;
+    position: relative;
 
     &__info {
         flex: 2;
@@ -68,5 +69,58 @@
         left: 4rem;
         border-radius: .5rem;
         position: absolute;
+    }
+
+    .arrow {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #1870CA;
+        position: absolute;
+        top: -20.2rem;
+        left: 48.5%;
+
+        img {
+            height: 1.6rem;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto 7rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 95rem;
+    }
+
+    &__listItem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-size: 3.5rem;
+            color: #1870CA;
+            font-weight: 300;
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            width: 4.4rem;
+            margin-right: 1.3rem;
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 1.5rem;
+            color: #6c757d;
+        }
     }
 }
