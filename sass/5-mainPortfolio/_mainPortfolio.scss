@@ -1,0 +1,49 @@
+.mainPortfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+    h1 {
+        margin: 0 0 2rem;
+        font-weight: 300;
+        font-size: 3.3rem;
+        letter-spacing: .2rem;
+    }
+
+    h3 {
+        color: #1870CA;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin: 11rem 0 .5rem;
+    }
+
+    &__navList {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__navListItem {
+        margin: 0 .75rem;
+        background-color: #f0f0f0;
+        padding: 1rem 2rem;
+        font-size: 1.3rem;
+        border-radius: .5rem;
+        letter-spacing: .1rem;
+        transition: .2s;
+    }
+
+    &__navListItem:hover {
+        cursor: pointer;
+        color: #fff;
+        background-color: #1870CA;
+    }
+
+    .active {
+        color: #fff;
+        background-color: #1870CA;
+    }
+}

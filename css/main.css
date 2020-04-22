@@ -79,6 +79,12 @@ html, body {
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
   margin: 0;
+  transition: 0.3s;
+}
+.header__heading button:hover {
+  background-color: #fff;
+  color: inherit;
+  cursor: pointer;
 }
 .header__video {
   position: absolute;
@@ -320,7 +326,7 @@ html, body {
 .mainServices__listItem:hover .six {
   background-image: url("../../img/bookmark-blue.svg");
 }
-.mainServices a {
+.mainServices .servicesLink {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -333,6 +339,55 @@ html, body {
   border-radius: 0.5rem;
   font-size: 1.4rem;
   font-weight: 600;
+  transition: 0.2s;
+}
+.mainServices .servicesLink:hover {
+  cursor: pointer;
+  background-color: #13579c;
+}
+
+.mainPortfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainPortfolio h1 {
+  margin: 0 0 2rem;
+  font-weight: 300;
+  font-size: 3.3rem;
+  letter-spacing: 0.2rem;
+}
+.mainPortfolio h3 {
+  color: #1870CA;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 11rem 0 0.5rem;
+}
+.mainPortfolio__navList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainPortfolio__navListItem {
+  margin: 0 0.75rem;
+  background-color: #f0f0f0;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  letter-spacing: 0.1rem;
+  transition: 0.2s;
+}
+.mainPortfolio__navListItem:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #1870CA;
+}
+.mainPortfolio .active {
+  color: #fff;
+  background-color: #1870CA;
 }
 
 /*# sourceMappingURL=main.css.map */

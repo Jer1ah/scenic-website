@@ -37,6 +37,13 @@
             font-size: 1.5rem;
             letter-spacing: .2rem;
             margin: 0;
+            transition: .3s;
+        }
+
+        button:hover {
+            background-color: #fff;
+            color: inherit;
+            cursor: pointer;
         }
     }
 
