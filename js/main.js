@@ -1,19 +1,3 @@
-//service list item slide up animation
-const serviceListAnimationController = (function() {
-    const _serviceList = document.querySelector(".mainServices__list");
-    _serviceList.addEventListener("mouseover", () => {
-        if(event.target.tagName === "LI") {
-            console.log("in");
-        }
-    });
-    _serviceList.addEventListener("mouseout", () => {
-        if(event.target.tagName === "LI") {
-            console.log("out");
-        }
-    });
-}());
-
-
 //portfolio nav active link functionality
 const portfolioActiveLinkController = (function() {
     const _navigation = document.querySelector("ul.mainPortfolio__navList");
@@ -25,5 +9,25 @@ const portfolioActiveLinkController = (function() {
             });
             event.target.classList.add("active");
         }
+    });
+}());
+
+
+//portfolio image slider functionality 
+const imageSlideController = (function() {
+    const _images = document.querySelectorAll(".mainPortfolio__image");
+    const _navigation = document.querySelector(".mainPortfolio__navList");
+    _navigation.addEventListener("click", (event) => {
+        _images.forEach((item) => {
+            if(event.target.innerHTML === "WEB" && item.classList[1] === "web") {
+                item.style.display = "none";
+            } else if(event.target.innerHTML === "DESIGN" && item.classList[1] === "design") {
+                item.style.display = "none";
+            } else if(event.target.innerHTML === "BRAND" && item.classList[1] === "brand") {
+                item.style.display = "none";
+            } else {
+                item.style.display = "block";
+            }
+        });
     });
 }());

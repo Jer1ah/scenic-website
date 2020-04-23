@@ -20,7 +20,7 @@
     &__navList {
         list-style: none;
         padding: 0;
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -45,5 +45,39 @@
     .active {
         color: #fff;
         background-color: #1870CA;
+        box-shadow: 0px 0px 14px 1px rgba(196,192,196,1);
+    }
+
+    &__images {
+        width: 110rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 10rem;
+        margin-left: 2.5rem;
+    }
+
+    &__image {
+        width: 30.5%;
+        height: 33.3rem;
+        margin: 0 2.5rem 2rem 0;
+        transition: all .3s;
+        display: block;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            transition: all .5s;
+        }
+    }
+
+    &__image:hover {
+        cursor: pointer;
+
+        img {
+            transform: scale(1.1);
+        }
     }
 }
