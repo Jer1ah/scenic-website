@@ -5,9 +5,9 @@ const portfolioActiveLinkController = (function() {
     _navigation.addEventListener("click", (event) => {
         if(event.target.tagName === "LI") {
             _navigationLinks.forEach((item) => {
-                item.classList.remove("active");
+                item.classList.remove("navActive");
             });
-            event.target.classList.add("active");
+            event.target.classList.add("navActive");
         }
     });
 }());

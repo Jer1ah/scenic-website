@@ -1,0 +1,36 @@
+.services {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .h1 {
+        margin: 0 0 3.3rem;
+        font-weight: 300;
+        font-size: 3.3rem;
+        letter-spacing: .2rem;
+    }
+
+    .h3 {
+        color: #1870CA;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin: 11rem 0 .5rem;
+    }
+}
+
+.servicesLink {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 1rem 0 8.8rem;
+    background-color: #1870CA;
+    color: white;
+    height: 5rem;
+    width: 16rem;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: .2s;
+}

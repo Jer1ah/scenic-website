@@ -330,7 +330,7 @@ html, body {
   color: #fff;
   background-color: #1870CA;
 }
-.mainPortfolio .active {
+.mainPortfolio .navActive {
   color: #fff;
   background-color: #1870CA;
   box-shadow: 0px 0px 14px 1px #c4c0c4;
@@ -657,6 +657,127 @@ html, body {
   line-height: 2.5rem;
   color: #333;
   margin-bottom: 2rem;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 11rem 0 3rem;
+}
+
+.navActive {
+  color: #fff;
+  background-color: #1870CA;
+  box-shadow: 0px 0px 14px 1px #c4c0c4;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15rem;
+}
+.testimonials h1 {
+  margin: 0 0 2rem;
+  font-weight: 300;
+  font-size: 3.3rem;
+  letter-spacing: 0.2rem;
+}
+.testimonials h3 {
+  color: #1870CA;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 9rem 0 0.5rem;
+}
+.testimonials__list {
+  display: flex;
+  width: 110rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  list-style: none;
+  margin-top: 4.4rem;
+}
+.testimonials__listItem {
+  width: 48%;
+  background-color: #f7f7f7;
+  position: relative;
+}
+.testimonials__listItem .quoteIcon {
+  width: 4rem;
+  position: absolute;
+  top: -2rem;
+  left: 2.5rem;
+}
+.testimonials__listItem p {
+  font-size: 1.8rem;
+  color: #777;
+  width: 90%;
+  margin-left: 2.5rem;
+  margin-top: 3rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+.testimonials__info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2rem 0 3rem;
+}
+.testimonials__info img {
+  height: 4.4rem;
+  width: 4.4rem;
+  border-radius: 50%;
+  margin-left: 2rem;
+}
+.testimonials__info span {
+  margin: 0 2rem 0;
+}
+.testimonials__info h4 {
+  margin: 0 0 0.3rem;
+  font-size: 1.5rem;
+}
+.testimonials__info h5 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #999;
+  font-weight: 300;
+}
+
+.services {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services .h1 {
+  margin: 0 0 3.3rem;
+  font-weight: 300;
+  font-size: 3.3rem;
+  letter-spacing: 0.2rem;
+}
+.services .h3 {
+  color: #1870CA;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 11rem 0 0.5rem;
+}
+
+.servicesLink {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 1rem 0 8.8rem;
+  background-color: #1870CA;
+  color: white;
+  height: 5rem;
+  width: 16rem;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition: 0.2s;
 }
 
 /*# sourceMappingURL=main.css.map */

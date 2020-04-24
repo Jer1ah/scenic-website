@@ -3,20 +3,23 @@
 
 //1-modules
 @import '1-modules/navigation';
+@import '1-modules/header';
+@import '1-modules/footer';
 
-//2-header
-@import '2-header/header';
+//2-mainPage
+@import '2-mainPage/about';
+@import '2-mainPage/blog';
+@import '2-mainPage/portfolio';
+@import '2-mainPage/services';
 
-//3-footer
-@import '3-footer/footer';
+//3-aboutPage
+@import '3-aboutPage/header';
+@import '3-aboutPage/aboutUs';
+@import '3-aboutPage/ourTeam';
 
-//4-mainPage
-@import '4-mainPage/about';
-@import '4-mainPage/blog';
-@import '4-mainPage/portfolio';
-@import '4-mainPage/services';
+//4-portfolioPage
+@import '4-portfolioPage/portfolio';
+@import '4-portfolioPage/testimonials';
 
-//5-aboutPage
-@import '5-aboutPage/header';
-@import '5-aboutPage/aboutUs';
-@import '5-aboutPage/ourTeam';
+//5-servicesPage
+@import '5-servicesPage/services';
