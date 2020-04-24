@@ -3,19 +3,19 @@
 
 //1-modules
 @import '1-modules/navigation';
-@import '1-modules/footer';
 
 //2-header
 @import '2-header/header';
 
-//3-mainAbout
-@import '3-mainAbout/mainAbout';
+//3-footer
+@import '3-footer/footer';
 
-//4-mainServices
-@import '4-mainServices/mainServices';
+//4-mainPage
+@import '4-mainPage/about';
+@import '4-mainPage/blog';
+@import '4-mainPage/portfolio';
+@import '4-mainPage/services';
 
-//5-mainPortfolio
-@import '5-mainPortfolio/mainPortfolio';
-
-//6-mainBlog
-@import '6-mainBlog/mainBlog';
+//5-aboutPage
+@import '5-aboutPage/header';
+@import '5-aboutPage/aboutUs';

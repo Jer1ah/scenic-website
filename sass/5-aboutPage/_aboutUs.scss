@@ -1,0 +1,40 @@
+.aboutUs {
+    display: flex;
+    margin: 13rem auto 10rem;
+    width: 115rem;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__image {}
+
+    &__info {
+        width: 45%;
+
+        h1 {
+            margin: 0 0 2rem;
+            font-weight: 300;
+            font-size: 3.3rem;
+            letter-spacing: .2rem;
+        }
+    
+        h3 {
+            color: #1870CA;
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin: 9rem 0 .5rem;
+        }
+
+        .paragraph1 {
+            font-size: 1.9rem;
+            color: #999;
+            font-weight: 300;
+            line-height: 3.3rem;
+        }
+
+        .paragraph2 {
+            color: #444;
+            font-size: 1.66rem;
+            line-height: 3rem;
+        }
+    }
+}
