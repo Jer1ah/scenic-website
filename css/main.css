@@ -43,6 +43,12 @@ html, body {
   color: #fff;
 }
 
+.footer {
+  background-color: #1870CA;
+  height: 15rem;
+  clip-path: polygon(100% 0, 100% 32%, 100% 100%, 50% 100%, 0 100%, 0 40%);
+}
+
 .header {
   background: url("../../img/city.mp4"), linear-gradient(rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0.8));
   background-position: center;
@@ -396,7 +402,7 @@ html, body {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 10rem;
+  margin-bottom: 7.5rem;
   margin-left: 2.5rem;
 }
 .mainPortfolio__image {
@@ -417,6 +423,84 @@ html, body {
 }
 .mainPortfolio__image:hover img {
   transform: scale(1.1);
+}
+
+.mainBlog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 15rem;
+}
+.mainBlog h1 {
+  margin: 0 0 2rem;
+  font-weight: 300;
+  font-size: 3.3rem;
+  letter-spacing: 0.2rem;
+}
+.mainBlog h3 {
+  color: #1870CA;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 11rem 0 0.5rem;
+}
+.mainBlog__list {
+  list-style: none;
+  padding: 0;
+  width: 110rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.mainBlog__listItem {
+  display: flex;
+  height: 19rem;
+  width: 48.5%;
+  background-color: #f9f9f9;
+  margin-bottom: 2.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.3s all;
+}
+.mainBlog__listItem:hover {
+  cursor: pointer;
+  background-color: #fff;
+  transform: translateY(-0.7rem);
+  box-shadow: 0px 0px 19px 8px #ccc8cc;
+}
+.mainBlog .listItem__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainBlog .listItem__info h1 {
+  font-size: 1.75rem;
+  border-bottom: 0.1rem solid lightgray;
+  width: 85%;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.mainBlog .listItem__info img {
+  width: 2rem;
+}
+.mainBlog .listItem__info span {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  width: 85%;
+}
+.mainBlog .listItem__info p {
+  margin: 0 2rem 0 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.mainBlog .blogImage {
+  height: 100%;
+  width: 20rem;
 }
 
 /*# sourceMappingURL=main.css.map */
