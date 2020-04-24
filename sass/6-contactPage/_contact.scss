@@ -1,0 +1,94 @@
+.contact {
+    width: 110rem;
+    margin: 11rem auto 10rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &__form {
+        width: 55rem;
+
+        form {
+            width: 100%;
+        }
+
+        .topRow {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            .inputGroup {
+                display: flex;
+                flex-direction: column; 
+                width: 48%;
+            }
+        }
+
+        .inputGroup {
+            display: flex;
+            flex-direction: column; 
+            width: 100%;
+            margin-bottom: 2rem;
+
+            label {
+                font-weight: 600;
+                font-size: 1.5rem;
+                color: #333;
+                margin-bottom: .75rem;
+            }
+
+            input {
+                height: 3.55rem;
+                border: .1rem solid lightgray;
+                border-radius: .3rem;
+                text-indent: 1rem;
+                font-size: 1.5rem;
+            }
+
+            textarea {
+                font-size: 1.5rem;
+                text-indent: 1rem;
+                padding-top: 1rem;
+                border: .1rem solid lightgray;
+                border-radius: .3rem;
+                height: 15rem;
+            }
+        }  
+    }
+
+    button {
+        background-color: #1870CA;
+        color: #fff;
+        border: none;
+        border-radius: .3rem;
+        font-size: 1.5rem;
+        padding: 1.7rem 2rem;
+        transition: .15s;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: darken(#1870CA, 10%);
+    }
+
+    &__info {
+        span {
+            display: block;
+            margin-bottom: 3rem;
+        }
+
+        h5 {
+            color: #333;
+            font-size: 1.6rem;
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+            font-size: 1.5rem;
+            margin-top: .5rem;
+            color: #777;
+        }
+    }
+}
