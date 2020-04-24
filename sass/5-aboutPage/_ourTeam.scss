@@ -1,0 +1,92 @@
+.ourTeam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        margin: 0 0 2rem;
+        font-weight: 300;
+        font-size: 3.3rem;
+        letter-spacing: .2rem;
+    }
+
+    h3 {
+        color: #1870CA;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin: 9rem 0 .5rem;
+    }
+
+    .socialLinks {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        list-style: none;
+        padding: 0;
+
+        img {
+            width: 2rem;
+        }
+    }
+
+    .socialLink {
+        background-color: #1870CA;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: .5rem;
+    }
+
+    .socialLink:hover {
+        cursor: pointer;
+        background-color: darken(#1870CA, 15%);
+    }
+
+    &__listTop {
+        list-style: none;
+        padding: 0;
+        margin-top: 3.3rem;
+        width: 110rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__listTopItem {
+        width: 47%;
+
+        img {
+            width: 100%;
+            border-radius: .5rem;
+        }
+
+        h3 {
+            margin: 1.5rem 0 .7rem;
+            color: black;
+            font-size: 2.5rem;
+        }
+
+        h5 {
+            color: #ccc;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: 0 0 1.75rem;
+        }
+
+        span {
+            color: #777;
+            font-weight: 300;
+            font-size: 1.9rem;
+            line-height: 3.3rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+            color: #333;
+        }
+    }
+}
