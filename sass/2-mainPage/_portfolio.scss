@@ -50,9 +50,10 @@
 
     &__images {
         width: 110rem;
+        max-width: 90%;
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         margin-bottom: 7.5rem;
         margin-left: 2.5rem;
@@ -60,7 +61,7 @@
 
     &__image {
         width: 30.5%;
-        height: 33.3rem;
+        height: 20%;
         margin: 0 2.5rem 2rem 0;
         transition: all .3s;
         display: block;
@@ -78,6 +79,23 @@
 
         img {
             transform: scale(1.1);
+        }
+    }
+}
+
+//media queries 
+@media(max-width: 990px) {
+    .mainPortfolio {
+        &__image {
+            width: 45%;
+        }
+    }
+}
+
+@media(max-width: 615px) {
+    .mainPortfolio {
+        &__image {
+            width: 100%;
         }
     }
 }
