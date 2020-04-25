@@ -1,7 +1,33 @@
+//mobile nav dropdown functionality
+const mobileNavController = (function() {
+    const _menuIcon = document.querySelector(".menuIcon");
+    const _closeIcon = document.querySelector(".closeIcon");
+    const _menuList = document.querySelector(".navigation__list");
+    const menuListStyles = window.getComputedStyle(_menuList);
+    
+    _menuIcon.addEventListener("click", () => {
+        if(menuListStyles.getPropertyValue("display") === "none") {
+            _menuList.style.display = "flex";
+            _closeIcon.style.display = "inline-block";
+            _menuIcon.style.display = "none";
+        }
+    });
+
+    _closeIcon.addEventListener("click", () => {
+       if(menuListStyles.getPropertyValue("display") === "flex") {
+            _menuList.style.display = "none";
+            _closeIcon.style.display = "none";
+            _menuIcon.style.display = "inline-block";
+       }
+    });
+}());
+
+
 //portfolio nav active link functionality
 const portfolioActiveLinkController = (function() {
     const _navigation = document.querySelector("ul.mainPortfolio__navList");
     const _navigationLinks = document.querySelectorAll(".mainPortfolio__navListItem");
+
     _navigation.addEventListener("click", (event) => {
         if(event.target.tagName === "LI") {
             _navigationLinks.forEach((item) => {
@@ -17,6 +43,7 @@ const portfolioActiveLinkController = (function() {
 const imageSlideController = (function() {
     const _images = document.querySelectorAll(".mainPortfolio__image");
     const _navigation = document.querySelector(".mainPortfolio__navList");
+
     _navigation.addEventListener("click", (event) => {
         _images.forEach((item) => {
             if(event.target.innerHTML === "WEB" && item.classList[1] === "web") {
