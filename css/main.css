@@ -107,6 +107,14 @@ html, body {
     color: #1870CA;
   }
 }
+@media (max-width: 855px) {
+  .navigation .logo {
+    left: 2rem;
+  }
+  .navigation .menuIcon {
+    right: 2rem;
+  }
+}
 .header {
   background: url("../../img/city.mp4"), linear-gradient(rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0.8));
   background-position: center;
@@ -132,6 +140,7 @@ html, body {
   font-size: 1.75rem;
   line-height: 3.5rem;
   margin: 1rem auto 4rem;
+  max-width: 75%;
 }
 .header__heading button {
   background: inherit;
@@ -157,6 +166,14 @@ html, body {
   height: 95vh;
 }
 
+@media (max-width: 855px) {
+  .header__heading h1 {
+    font-size: 4rem;
+  }
+  .header__heading p {
+    width: 44rem;
+  }
+}
 .footer {
   background-color: #1870CA;
   height: 15rem;

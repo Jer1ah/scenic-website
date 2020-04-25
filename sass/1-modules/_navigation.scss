@@ -123,3 +123,15 @@
         }
     }
 }
+
+@media(max-width: 855px) {
+    .navigation {
+        .logo {
+            left: 2rem;
+        }
+
+        .menuIcon {
+            right: 2rem;
+        }
+    }
+}

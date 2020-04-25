@@ -23,6 +23,20 @@ const mobileNavController = (function() {
 }());
 
 
+//making sure the navigation displays
+const innerWidthController = (function() {
+    window.onresize = () => {
+        if(window.innerWidth > 995) {
+            document.querySelector(".navigation__list").style.display = "flex";
+            document.querySelector(".menuIcon").style.display = "none";
+        } else {
+            document.querySelector(".navigation__list").style.display = "none";
+            document.querySelector(".menuIcon").style.display = "inline-block";
+        }
+    }
+}());
+
+
 //portfolio nav active link functionality
 const portfolioActiveLinkController = (function() {
     const _navigation = document.querySelector("ul.mainPortfolio__navList");

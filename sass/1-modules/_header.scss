@@ -25,6 +25,7 @@
             font-size: 1.75rem;
             line-height: 3.5rem;
             margin: 1rem auto 4rem;
+            max-width: 75%;
         }
 
         button {
@@ -52,5 +53,18 @@
         top: 0;
         z-index: -1;
         height: 95vh;
+    }
+}
+
+//media queries 
+@media(max-width: 855px) {
+    .header__heading {
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            width: 44rem;
+        }
     }
 }
