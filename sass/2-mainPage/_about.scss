@@ -1,5 +1,6 @@
 .mainAbout {
-    max-width: 115rem;
+    width: 115rem;
+    max-width: 90%;
     min-height: 40rem;
     margin: 17.5rem auto 7rem;
     display: flex;
@@ -66,7 +67,7 @@
 
     &__image2 {
         width: 25rem;
-        left: 4rem;
+        right: 15rem;
         border-radius: .5rem;
         position: absolute;
     }
@@ -96,6 +97,7 @@
         align-items: flex-start;
         justify-content: space-between;
         width: 95rem;
+        max-width: 90%;
     }
 
     &__listItem {
@@ -103,6 +105,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 20rem;
 
         span {
             font-size: 3.5rem;
@@ -121,6 +124,93 @@
             font-weight: 400;
             font-size: 1.5rem;
             color: #6c757d;
+        }
+    }
+}
+
+//media queries 
+@media(max-width: 1050px) {
+    .mainAbout {
+        &__image1 {
+            width: 20rem;
+        }
+
+        &__image2 {
+            width: 20rem;
+            right: 10rem;
+        }
+
+        &__info {
+            flex: 2;
+            p {
+                width: 85%;
+            }
+        }
+
+        &__list {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &Item {
+                width: 30%;
+                margin: 0 5rem 5rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 795px) {
+    .mainAbout {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 80%;
+        min-height: 80rem;
+
+        .arrow {
+            left: 44%;
+        }
+
+        &__info {
+            flex: 1;
+            p {
+                width: 100%;
+            }
+        }
+
+        &__images {
+            display: block;
+            min-width: 100%;
+            min-height: 55rem;
+            flex: 1;
+        }
+
+        &__image1 {
+            top: 23rem;
+            left: 25%;
+            width: 30rem;
+        }
+
+        &__image2 {
+            top: 7rem;
+            left: 13%;
+            width: 30rem;
+        }
+    }
+}
+
+@media(max-width: 570px) {
+    .mainAbout {
+        &__image1 {
+            left: 18%;
+        }
+
+        &__image2 {
+            left: 8%;
+        }
+
+        &__listItem {
+            width: 40%;
         }
     }
 }
