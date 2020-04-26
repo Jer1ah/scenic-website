@@ -1075,6 +1075,7 @@ html, body {
 
 .contact {
   width: 110rem;
+  max-width: 90%;
   margin: 11rem auto 10rem;
   display: flex;
   align-items: flex-start;
@@ -1151,6 +1152,33 @@ html, body {
   font-size: 1.5rem;
   margin-top: 0.5rem;
   color: #777;
+}
+
+@media (max-width: 1025px) {
+  .contact__form {
+    width: 45rem;
+  }
+}
+@media (max-width: 915px) {
+  .contact {
+    flex-direction: column;
+    width: 70rem;
+  }
+  .contact__form {
+    width: 100%;
+    margin-bottom: 7rem;
+  }
+}
+@media (max-width: 725px) {
+  .contact {
+    width: 50rem;
+  }
+  .contact__form .topRow {
+    flex-direction: column;
+  }
+  .contact__form .topRow .inputGroup {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
