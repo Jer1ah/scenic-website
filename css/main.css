@@ -970,6 +970,7 @@ html, body {
 .testimonials__list {
   display: flex;
   width: 110rem;
+  max-width: 90%;
   justify-content: space-between;
   align-items: flex-start;
   padding: 0;
@@ -1022,6 +1023,21 @@ html, body {
   font-weight: 300;
 }
 
+@media (max-width: 1175px) {
+  .testimonials__list {
+    width: 90rem;
+  }
+}
+@media (max-width: 735px) {
+  .testimonials__list {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .testimonials__listItem {
+    width: 100%;
+    margin-bottom: 4.4rem;
+  }
+}
 .services {
   background-color: #f7f7f7;
   display: flex;

@@ -21,6 +21,7 @@
     &__list {
         display: flex;
         width: 110rem;
+        max-width: 90%;
         justify-content: space-between;
         align-items: flex-start;
         padding: 0;
@@ -78,6 +79,29 @@
             font-size: 1.2rem;
             color: #999;
             font-weight: 300;
+        }
+    }
+}
+
+//media queries 
+@media(max-width: 1175px) {
+    .testimonials {
+        &__list {
+            width: 90rem;
+        }
+    }
+}
+
+@media(max-width: 735px) {
+    .testimonials {
+        &__list {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+
+        &__listItem {
+            width: 100%;
+            margin-bottom: 4.4rem;
         }
     }
 }
