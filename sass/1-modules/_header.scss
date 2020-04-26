@@ -28,8 +28,11 @@
             max-width: 75%;
         }
 
-        button {
+        a {
             background: inherit;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
             border: .2rem solid #fff;
             border-radius: .3rem;
             color: #fff;
@@ -39,9 +42,10 @@
             letter-spacing: .2rem;
             margin: 0;
             transition: .3s;
+            text-decoration: none;
         }
 
-        button:hover {
+        a:hover {
             background-color: #fff;
             color: inherit;
             cursor: pointer;
