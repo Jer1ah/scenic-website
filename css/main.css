@@ -612,7 +612,16 @@ html, body {
   }
 }
 .secondary-header {
-  margin-top: 25rem;
+  height: 35rem;
+  position: relative;
+}
+
+.secondary-heading {
+  position: absolute;
+  top: 52.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
 }
 
 .aboutUs {
@@ -871,6 +880,9 @@ html, body {
   width: 48%;
   background-color: #f7f7f7;
   position: relative;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
 }
 .testimonials__listItem .quoteIcon {
   width: 4rem;
@@ -891,7 +903,9 @@ html, body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 2rem 0 3rem;
+  margin: 0;
+  position: absolute;
+  bottom: 1.5rem;
 }
 .testimonials__info img {
   height: 4.4rem;
@@ -913,12 +927,7 @@ html, body {
   font-weight: 300;
 }
 
-@media (max-width: 1175px) {
-  .testimonials__list {
-    width: 90rem;
-  }
-}
-@media (max-width: 735px) {
+@media (max-width: 995px) {
   .testimonials__list {
     flex-direction: column;
     margin-bottom: 0;
@@ -926,6 +935,11 @@ html, body {
   .testimonials__listItem {
     width: 100%;
     margin-bottom: 4.4rem;
+    height: auto;
+  }
+  .testimonials__info {
+    position: initial;
+    margin-bottom: 2rem;
   }
 }
 .services {

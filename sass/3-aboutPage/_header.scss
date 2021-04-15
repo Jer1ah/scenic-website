@@ -1,3 +1,12 @@
 .secondary-header {
-    margin-top: 25rem;
+    height: 35rem;
+    position: relative;
+}
+
+.secondary-heading {
+    position: absolute;
+    top: 52.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
 }
