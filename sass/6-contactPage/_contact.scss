@@ -45,6 +45,7 @@
                 border-radius: .3rem;
                 text-indent: 1rem;
                 font-size: 1.5rem;
+                outline: none;
             }
 
             textarea {
@@ -54,6 +55,8 @@
                 border: .1rem solid lightgray;
                 border-radius: .3rem;
                 height: 15rem;
+                outline: none;
+                font-family: 'Manrope', sans-serif;
             }
         }  
     }
@@ -66,11 +69,19 @@
         font-size: 1.5rem;
         padding: 1.7rem 2rem;
         transition: .15s;
+        outline: none;
     }
 
     button:hover {
         cursor: pointer;
         background-color: darken(#1870CA, 10%);
+    }
+
+    h6 {
+        font-size: 1.25rem;
+        margin-top: .75rem;
+        opacity: 0;
+        transition: all .35s;
     }
 
     &__info {

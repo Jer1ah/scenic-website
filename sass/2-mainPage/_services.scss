@@ -39,6 +39,7 @@
         background-color: #fff;
         margin-bottom: 3.3rem;
         transition: .2s;
+        height: 35rem;
 
         .wrapper {
             background-color: #1870CA;
@@ -180,7 +181,7 @@
     }
 }
 
-@media(max-width: 700px) {
+@media(max-width: 750px) {
     .mainServices__listItem {
         width: 45rem;
         max-width: 100%;
